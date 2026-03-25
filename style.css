@@ -8,6 +8,10 @@ body {
 }
 
 h1 {
+    color: red;
+}
+
+h1 {
     color: #ffffff;
     background-color: #4a6fa5;
     text-align: center;
@@ -17,6 +21,7 @@ h1 {
 }
 
 h2 {
+    color: red;
     color: #4a6fa5;
     border-bottom: 2px solid #4a6fa5;
     padding-bottom: 5px;
