@@ -2,26 +2,44 @@ body {
     background-color: #f4f4f9;
     color: #333333;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 h1 {
     color: white;
-    background-color: #e63946; /* 红色背景 */
-    text-align: center;
+    background-color: #e63946;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
 
+.subtitle {
+    font-size: 1.1rem;
+    color: #666666;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
 
 h2 {
-    color: #e63946; /* 红色标题 */
+    color: #e63946;
     border-bottom: 2px solid #e63946;
-    border-bottom: 2px solid #4a6fa5;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    padding-bottom: 6px;
+    margin-top: 35px;
 }
 
 h3 {
@@ -34,17 +52,45 @@ p, ul, ol {
     padding: 15px;
     margin: 15px 0;
     border: 1px solid #dddddd;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.main-image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 4px solid #e63946;
+    border-radius: 12px;
+    padding: 6px;
+    background-color: white;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    border: 4px solid #4a6fa5;
+    border-radius: 12px;
+    padding: 6px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover,
+.main-image:hover {
+    transform: scale(1.03);
 }
 
 img {
-    display: block;
-    margin: 20px auto;
-    border: 4px solid #4a6fa5;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: white;
-    max-width: 100%;
     height: auto;
 }
 
@@ -52,9 +98,17 @@ a {
     color: #d14d72;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #ff6600;
+    color: #e63946;
     text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #666666;
+    font-size: 0.95rem;
 }
